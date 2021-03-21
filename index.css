@@ -1,0 +1,41 @@
+div{
+    width: 600px;
+    /*PROPRIETA' DEI BORDI*/
+    border: 2px solid red;
+    border-left-width: 3px;
+    /*Tratteggiato,default:Trasparent*/
+    border-left-style: dashed;
+    border-left-color: black;
+    border-right: 15px double green;
+    /*PROPRIETA' DELLO SFONDO*/
+    background-color: RGB(200,200,200);
+    /*PROPRIETA' DEI MARGINI*/
+    margin: 10px;/*Ogni div ha un suo margine*/
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /*Senso orario top,right,bottom,left
+    margin: 30px 50px 30px 50px;
+    oppure top/bottom left/right*/
+    margin: 30px auto;
+    padding: 0;
+}
+.div1,.div3{
+    text-align: center;/*centrare testo non il blocco div*/
+    /*"Vertical align" per il testo dentro un blocco non è riconosciuto*/
+    line-height: 60px;
+    height: 60px;
+}
+.div3{
+    /*Default 0 per il Padding
+    vale la regola del margin*/
+    padding: 40px 20px;
+    background-image: url("img.jpg");
+    /*Per non ripetere l'immagine utilizzare
+    no-repeat*/
+    background-repeat: no-repeat;/**/
+    background-position: center;
+    /*Serve per la dimensione nel contenitore*/
+    background-size:contain;/*cover lato largo*/
+}
